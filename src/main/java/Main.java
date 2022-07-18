@@ -11,7 +11,14 @@ public class Main {
     }
 
     public static ArrayList<Integer> mergeTwoArrayLists(ArrayList<Integer> l1, ArrayList<Integer> l2) {
-        // your code here
-        return null;
+        l1.addAll(l2);
+        ArrayList<Integer> newList = new ArrayList<>();
+
+        for (Integer integer : l1) {
+            if (integer > 0) {
+                newList.add(integer);
+            }
+        }
+        return newList;
     }
 }
